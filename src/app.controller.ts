@@ -1,4 +1,4 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post, Get} from '@nestjs/common';
 import { ChatService } from './chat.service';
 
 @Controller('api')
