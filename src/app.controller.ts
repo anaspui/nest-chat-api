@@ -10,4 +10,8 @@ export class AppController {
     this.chatService.trigger('chat', 'message', { username, message });
     return [];
   }
+  @Get('hello')
+  hello(){
+    return 'Hello World!';
+  }
 }
