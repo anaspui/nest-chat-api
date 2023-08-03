@@ -4,7 +4,7 @@ import { ChatService } from "./chat.service";
 @Controller()
 export class AppController {
   constructor(private chatService: ChatService) {}
-  @Get("")
+  @Get()
   hell() {
     return "Hello World!";
   }
