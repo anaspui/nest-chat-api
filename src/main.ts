@@ -6,16 +6,8 @@ const express = require("express");
 const app = express();
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.use(
-    cors({
-      origin: [
-        "http://localhost:3000",
-        "http://localhost:8080",
-        "http://localhost:4200",
-        "https://chat-app-anaspui.vercel.app",
-      ],
-    })
-  );
+  app.use(cors());
+
   await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
