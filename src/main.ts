@@ -12,7 +12,7 @@ async function bootstrap() {
         "http://localhost:3000",
         "http://localhost:8080",
         "http://localhost:4200",
-        "https://chat-app-three-woad.vercel.app/",
+        "https://chat-app-anaspui.vercel.app",
       ],
     })
   );
