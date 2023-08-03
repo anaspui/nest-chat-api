@@ -11,7 +11,7 @@ export class AppController {
     return [];
   }
    @Options('messages')
-  async messages(@Body() username: string, @Body() message: string) {
+  async Omessages(@Body() username: string, @Body() message: string) {
     this.chatService.trigger('chat', 'message', { username, message });
     return [];
   }
